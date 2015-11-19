@@ -76,25 +76,46 @@ void post_traversal(BT_PTR _bt) {
 #endif
 };
 
+//TODO: BUG UNFIXED
+/*
 void pre_traversal_no_recursion(BT_PTR _bt) {
-	ST_PTR temp_st;
-	while (!(_bt && is_empty(temp_st)))
-	{
-		while (!_bt)
-		{
-			visit_node(_bt);
-			push_in(temp_st, _bt);
-			_bt = _bt->l_child;
+	ST_PTR temp_st = init_st();
+	BT_PTR temp_bt = _bt;
+
+	while (!temp_bt || !is_empty(temp_st)) {
+		while (!temp_bt) {
+			visit_node(temp_bt);
+			push_in(temp_st, temp_bt);
+			temp_bt = temp_bt->l_child;
 		}
-		if (!is_empty(temp_st))
-		{
-			_bt = get_top(temp_st);
+		if (!is_empty(temp_st)){
+			temp_bt = get_top(temp_st);
+			visit_node(temp_bt);
 			pull_out(temp_st);
-			_bt = _bt->r_child;
+			temp_bt = temp_bt->r_child;
 		}
 	}
+
+	destory_st(temp_st);
 };
-//void in_traversal_no_recursion(BT_PTR _bt);
-//void post_traversal_no_recursion(BT_PTR _bt);
-//bt_size_t get_depth(BT_PTR _bt);
-//bt_size_t leaf_amount(BT_PTR _bt);
+
+void in_traversal_no_recursion(BT_PTR _bt) {
+	ST_PTR temp_st = init_st();
+	BT_PTR temp_bt = _bt;
+
+	while (!temp_bt || !is_empty(temp_st)){
+		while (!temp_bt) {
+			push_in(temp_st, temp_bt);
+			temp_bt = temp_bt->l_child;
+		}
+		if (!is_empty(temp_st)) {
+			temp_bt = get_top(temp_st);
+			visit_node(temp_bt);
+			pull_out(temp_st);
+			temp_bt = temp_bt->r_child;
+		}
+	}
+
+	destory_st(temp_st);
+};
+*/

@@ -3,7 +3,8 @@
 
 #define SCANF_CHECK 0
 #define CHILD_NULL_CHECK 0
-#define OREDERS_DEBUG 1
+#define OREDERS_DEBUG 0
 #define STACK_BT_DEBUG 0
+#define NO_RECURTION_TRA_CHECK 1
 
 #endif

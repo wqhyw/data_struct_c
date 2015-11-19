@@ -38,6 +38,16 @@ int main() {
 	BOOL is_full(ST_PTR _st);
 #endif
 
+#if NO_RECURTION_TRA_CHECK
+	printf("pre order no recurtion: ");
+	pre_traversal_no_recursion(bt);
+	printf("\n");
+
+	printf("in order no recurtion: ");
+	in_traversal_no_recursion(bt);
+	printf("\n");
+#endif
+
 	destory_bt(bt);
 
 	system("pause");
