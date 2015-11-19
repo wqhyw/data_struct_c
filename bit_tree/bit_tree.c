@@ -96,8 +96,5 @@ void pre_traversal_no_recursion(BT_PTR _bt) {
 };
 //void in_traversal_no_recursion(BT_PTR _bt);
 //void post_traversal_no_recursion(BT_PTR _bt);
-//void level_traversal(BT_PTR _bt);
-//void depth_traversal(BT_PTR _bt);
-//void breadth_traversal(BT_PTR _bt);
 //bt_size_t get_depth(BT_PTR _bt);
 //bt_size_t leaf_amount(BT_PTR _bt);

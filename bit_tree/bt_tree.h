@@ -19,9 +19,6 @@ extern void post_traversal(BT_PTR _bt);
 extern void pre_traversal_no_recursion(BT_PTR _bt);
 extern void in_traversal_no_recursion(BT_PTR _bt);
 extern void post_traversal_no_recursion(BT_PTR _bt);
-extern void level_traversal(BT_PTR _bt);
-extern void depth_traversal(BT_PTR _bt);
-extern void breadth_traversal(BT_PTR _bt);
 extern bt_size_t get_depth(BT_PTR _bt);
 extern bt_size_t leaf_amount(BT_PTR _bt);
 
