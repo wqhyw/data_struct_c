@@ -8,8 +8,8 @@ BT_PTR create_bt_pre(){
 	BT_PTR temp_bt_node;
 	bt_data_t temp_data;
 
-#if SCANF_DEBUG
-	printf("input: ");
+#if SCANF_CHECK
+	printf("input (Null node instead bny '#' include leafs' leafs): ");
 #endif
 
 	scanf("%c", &temp_data);

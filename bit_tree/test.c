@@ -1,5 +1,6 @@
 #include "bt_tree.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include "DEBUG_SWICTHES.H"
 
 int main() {

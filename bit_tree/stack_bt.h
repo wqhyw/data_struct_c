@@ -9,7 +9,7 @@
 typedef enum{FALSE, TRUE} BOOL;
 typedef struct stack{
 	st_data_t * datas;
-	size_t top;
+	st_size_t top;
 	int base;
 }STACK, *ST_PTR;
 
