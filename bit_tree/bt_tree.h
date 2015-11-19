@@ -1,11 +1,11 @@
 #ifndef _BT_PTR_TREE_H_
 #define _BT_PTR_TREE_H_
 
-#define data_t char
-#define size_t unsigned
+#define bt_data_t char
+#define bt_size_t unsigned
 
 typedef struct bit_tree {
-	data_t data;
+	bt_data_t data;
 	struct bit_tree* l_child;
 	struct bit_tree* r_child;
 }bt_node, *BT_PTR;
@@ -22,7 +22,7 @@ extern void post_traversal_no_recursion(BT_PTR _bt);
 extern void level_traversal(BT_PTR _bt);
 extern void depth_traversal(BT_PTR _bt);
 extern void breadth_traversal(BT_PTR _bt);
-extern size_t get_depth(BT_PTR _bt);
-extern size_t leaf_amount(BT_PTR _bt);
+extern bt_size_t get_depth(BT_PTR _bt);
+extern bt_size_t leaf_amount(BT_PTR _bt);
 
 #endif

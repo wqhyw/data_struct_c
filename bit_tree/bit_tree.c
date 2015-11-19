@@ -6,7 +6,7 @@
 
 BT_PTR create_bt_pre(){
 	BT_PTR temp_bt_node;
-	data_t temp_data;
+	bt_data_t temp_data;
 
 #if SCANF_DEBUG
 	printf("input: ");
@@ -76,7 +76,7 @@ void post_traversal(BT_PTR _bt) {
 #endif
 };
 
-void pre_traversal_no_recursion(BT_PTR _bt) {//TODO: FINISH
+void pre_traversal_no_recursion(BT_PTR _bt) {
 	ST_PTR temp_st;
 	while (!(_bt && is_empty(temp_st)))
 	{
@@ -93,11 +93,11 @@ void pre_traversal_no_recursion(BT_PTR _bt) {//TODO: FINISH
 			_bt = _bt->r_child;
 		}
 	}
-};//TODO: FINISH DEFINITIONS
+};
 //void in_traversal_no_recursion(BT_PTR _bt);
 //void post_traversal_no_recursion(BT_PTR _bt);
 //void level_traversal(BT_PTR _bt);
 //void depth_traversal(BT_PTR _bt);
 //void breadth_traversal(BT_PTR _bt);
-//size_t get_depth(BT_PTR _bt);
-//size_t leaf_amount(BT_PTR _bt);
+//bt_size_t get_depth(BT_PTR _bt);
+//bt_size_t leaf_amount(BT_PTR _bt);
