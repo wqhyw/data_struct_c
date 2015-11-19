@@ -43,5 +43,3 @@ int main() {
 
 	return 0;
 }
-
-//IN ORDER: ABC#D###EF##G##

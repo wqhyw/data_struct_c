@@ -93,7 +93,7 @@ void pre_traversal_no_recursion(BT_PTR _bt) {//TODO: FINISH
 			_bt = _bt->r_child;
 		}
 	}
-};
+};//TODO: FINISH DEFINITIONS
 //void in_traversal_no_recursion(BT_PTR _bt);
 //void post_traversal_no_recursion(BT_PTR _bt);
 //void level_traversal(BT_PTR _bt);

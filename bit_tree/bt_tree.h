@@ -26,5 +26,3 @@ extern size_t get_depth(BT_PTR _bt);
 extern size_t leaf_amount(BT_PTR _bt);
 
 #endif
-
-
