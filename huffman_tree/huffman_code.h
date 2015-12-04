@@ -1,7 +1,6 @@
 #ifndef _HUFFMAN_CODE_H_
 #define _HUFFMAN_CODE_H_
 
-#define MAXSIZE 50
 #define ENDL printf("\n")
 
 typedef enum {
