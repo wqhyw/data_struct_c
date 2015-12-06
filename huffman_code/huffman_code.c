@@ -10,9 +10,9 @@ HTN hc_init(int _node_amount) {
 	int index = 0;
 
 	while (++index <= _node_amount) {
-		printf("µÚ%d¸ö×Ö·û: ", index);
+		printf("ç¬¬%dä¸ªå­—ç¬¦: ", index);
 		scanf("%s", &ht[index].data);	
-		printf("%cµÄÈ¨ÖØ: ", ht[index].data);
+		printf("%cçš„æƒé‡: ", ht[index].data);
 		scanf("%d", &ht[index].weight);
 		ht[index].l_child = 0;
 		ht[index].r_child = 0;
@@ -117,7 +117,7 @@ HC hc_encode(HTN _ht, int _node_amount) {
 	return cw_table;
 }
 
-char *hc_uncode(HTN _ht, int _node_amount,char *_hf_code) {
+char *hc_uncode(HTN _ht, int _node_amount, char *_hf_code) {
 	char *result = (char *)malloc(sizeof(char) * _node_amount);
 	int index = 0, index_r = 0;
 	int root = 2 * _node_amount - 1;
@@ -141,7 +141,7 @@ char *hc_uncode(HTN _ht, int _node_amount,char *_hf_code) {
 		}
 
 		else if (_hf_code[index] == '\0' && flag_move != 0) {
-			printf("Ä©Î²%dÎ»ÎÞÐ§\n", flag_move);
+			printf("æœ«å°¾%dä½æ— æ•ˆ\n", flag_move);
 		}
 	}
 
@@ -154,7 +154,7 @@ void hc_print_ht(HTN _ht, int _node_amount) {
 	int index;
 	int size = 2 * _node_amount;
 
-	printf("ÐòºÅ\t×Ö·û\tÈ¨ÖØ\t×óº¢×Ó\tÓÒº¢×Ó\t¸¸½Úµã\tflag\n");
+	printf("åºå·\tå­—ç¬¦\tæƒé‡\tå·¦å­©å­\tå³å­©å­\tçˆ¶èŠ‚ç‚¹\tflag\n");
 
 	for (index = 1; index < size; index++)
 		printf("%d\t%c\t%d\t%d\t%d\t%d\t%d\n", index, _ht[index].data, _ht[index].weight, _ht[index].l_child, _ht[index].r_child, _ht[index].parent, _ht[index].flag);
@@ -166,7 +166,7 @@ void hc_print_cw(HC _cw_table, int _node_amount) {
 	int index = 0;
 
 	while (index < _node_amount) {
-		printf("%c¹þ·òÂü±àÂë: %s\n", _cw_table[index].data, _cw_table[index].h_code);
+		printf("%cå“ˆå¤«æ›¼ç¼–ç : %s\n", _cw_table[index].data, _cw_table[index].h_code);
 		index++;
 	}
 	ENDL;
