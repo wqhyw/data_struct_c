@@ -166,7 +166,7 @@ void hc_print_cw(HC _cw_table, int _node_amount) {
 	int index = 0;
 
 	while (index < _node_amount) {
-		printf("%c哈夫曼编码: %s\n", _cw_table[index].data, _cw_table[index].h_code);
+		printf("%c: %s\n", _cw_table[index].data, _cw_table[index].h_code);
 		index++;
 	}
 	ENDL;
